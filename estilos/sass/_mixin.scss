@@ -1,0 +1,140 @@
+@mixin anchoResponsive($anchoNormal, $anchoTablet, $anchoMovil) {
+    width: $anchoNormal;
+    height: auto;
+
+    @media (max-width: $tablet){
+        width: $anchoTablet;
+    }
+
+    @media (max-width: $movil) {
+        width: $anchoMovil;
+    }
+}
+
+@mixin proyectos {
+    @media (max-width: $tablet) {
+        display: block;
+        width: 100%;
+        margin: 1% auto;
+    }
+
+    @media (max-width: $movil) {
+        display: block;
+        width: 100%;
+        margin: 1% auto;
+    }
+}
+
+/* NAVEGADOR DESPLEGABLE */
+@mixin navegadorDesplegable{
+    @media (max-width: $tablet){
+        label{
+            display: inline;
+            position: absolute;
+            width: 30%;
+            height: 30%;
+            margin: 4%;
+        }
+
+        .nav-titulo{
+            margin: -4% auto 0;
+        }
+
+        #menu-hamburguesa:checked {
+            & ~ .nav-desplegable{
+                display: block;
+            }
+        }
+
+        .nav-desplegable{
+            display: none;
+        }
+    }
+}
+
+@mixin modoOscuro{
+    .nav{
+        background: darkgrey;
+    }
+}
+
+
+/* SERVICIOS INFORMATICOS */
+@mixin serviciosInformaticos{
+    @media (max-width: $tablet){
+
+    }
+}
+
+/************   REVISAR   ************/
+@mixin letraProyecto{
+    @include fuenteOrdendor;
+
+    @include fuenteTablet;
+
+    @include fuenteMovil;
+}
+
+@mixin fuenteOrdendor {
+    // font-size: 1vw;
+
+    // @media (max-width: 1700px) {
+    //     font-size: 1.1vw;
+    // }
+
+    // @media (max-width: 1600px) {
+    //     font-size: 1.2vw;
+    // }
+
+    // @media (max-width: 1500px) {
+    //     font-size: 1.3vw;
+    // }
+
+    // @media (max-width: 1200px) {
+    //     font-size: 1.4vw;
+    // }
+
+    // @media (max-width: 1000px) {
+    //     font-size: 1.34vw;
+    // }
+
+    // @media (max-width: 900px) {
+    //     font-size: 1.4vw;
+    // }
+}
+
+@mixin fuenteTablet {
+    // @media (max-width: $tablet) {
+    //     font-size: 2.8vw;
+    // }
+
+    // @media (max-width: 700px) {
+    //     font-size: 3vw;
+    // }
+
+    // @media (max-width: 600px) {
+    //     font-size: 3.4vw;
+    // }
+}
+
+@mixin fuenteMovil {
+    // @media (max-width: $movil) {
+    //     font-size: 4.2vw;
+    // }
+
+    // @media (max-width: 400px) {
+    //     font-size: 4.7vw;
+    // }
+
+    // @media (max-width: 350px) {
+    //     font-size: 5.4vw;
+    // }
+
+    // @media (max-width: 300px) {
+    //     font-size: 5.8vw;
+    // }
+
+    // @media (max-width: 250px) {
+    //     font-size: 6.4vw;
+    // }
+}

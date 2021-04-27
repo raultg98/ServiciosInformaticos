@@ -1,0 +1,25 @@
+@import "_principal";
+
+@import "_proyectos";
+
+@import "_navegador";
+
+@import "_cabecera";
+
+@import "_queHacemos";
+
+@import "_nuestrosClientes";
+
+@import "_nuestroBlog";
+
+@import "_serviciosYprecios";
+
+@import "_presentacionCoorporativa";
+
+@import "_blog";
+
+@import "_proyectoIndividual";
+
+
+// Para que me lo 'compile' en una carpeta externa al sass.
+// sass --watch main.scss ../css/main.css

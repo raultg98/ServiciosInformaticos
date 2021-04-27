@@ -1,0 +1,325 @@
+body{
+    background-color: lightblue;
+}
+
+.contenedor{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/********************************************************     
+***********            NAVEGADOR              ***********     
+********************************************************/
+/* 
+    COLOR DEL FONDO: rgb(0, 255, 180)
+    COLOR DE LAS LETRAS: #0D957E 
+*/
+
+nav{
+    width: 20%;
+    background-color: rgb(0, 255, 180);
+    float: left;
+    color: white;
+}
+
+#menu-hamburguesa{
+    display: none;
+}
+
+nav label{
+    display: none;
+}
+
+/****    CABECERA DEL NAV    ****/  
+.nav-titulo{
+    width: 80%;
+    margin: 3px;
+    font-size: 20px;
+    margin: 5px auto 5px;
+    text-align: center;
+} 
+
+.nav-logo{
+    height: 40%;
+    width: 40%;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 40%;
+    margin-left: 29%;
+}
+
+.nav-descripcion{
+    width: 80%;
+    font-size: 13px;
+    margin: 5px auto 10px;
+    text-align: center;
+}
+
+/****    ICONOS    ****/  
+.nav-iconos{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nav-iconos ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav-iconos li{
+    display: inline-block;
+    margin: 2%;
+}
+
+.nav-iconos ul a{
+    display: block;
+    color:black;
+    text-decoration: none;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.nav-iconos ul li{
+    position: relative;
+    float: left;
+}
+
+.nav-iconos span{
+    color: rgb(0, 255, 180);
+}
+
+.nav-iconos ul a:hover{
+    border-color: #0D957E ;
+    background-color: #0D957E;
+    color: white;
+}
+
+/* PREGUNTARLE A PABLO */
+/* Solo funciona si estas sobre el icono */
+.nav-iconos ul li span:hover{
+    border-color: #0D957E ;
+    background-color: #0D957E;
+    color: white;
+}
+
+/****    MENU    ****/
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+} 
+
+.menu ul a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-left: 12%;
+    margin-top: 3%;
+}
+
+.menu ul a:hover{
+    color: #085A4D ;
+}
+ 
+/* MENU DESPLEGABLE*/
+.menu ul ul{
+    display: none;
+    margin-left: 12px;
+}
+
+.menu ul li:hover > ul{
+    display: block;
+    background-color: #18EBCA;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flechita::after{
+    content: "\25BC";
+    font-size: 11px;
+}
+
+/****    BOTON NAVEGADOR    ****/
+.nav-boton{
+    display: block;
+    color: white;
+    background-color: #085A4D;
+    margin: 8% auto;
+    border: none;
+    border-radius: 5%;
+    padding: 1%;
+    cursor: pointer;
+}
+
+hr{
+    color: #085A4D;
+    background-color: #085A4D;
+    display: block;
+    width: 80%;
+    border: 0.3px solid #085A4D;
+    margin: 10% auto 10%;
+} 
+
+/********************************************************     
+***********             HEADER                ***********     
+********************************************************/
+.subContenedor{
+    background-color: lightsalmon;
+    /* No tocar */
+    width: 80%; 
+    float: left;
+}
+
+.cabecera{
+    width: 90%;
+    height: 3%;
+    /* background-color: lightgreen; */
+    padding: 1.5%;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.cabecera-titulo{
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+.cabecera-descripcion{
+    width: 65%;
+    text-align: center;
+    justify-content: center;
+    font-size: 12px;
+    margin: 1% auto;
+}
+
+.cabecera-boton{
+    background-color: rgb(0, 255, 180);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin: 1% auto;
+    cursor: pointer;
+    padding: 0.5%;
+}
+
+/* MODO OSCURO */
+.letras-modoOscuro{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.switch{
+    width: 20px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+/********************************************************     
+***********            MAIN              ***********     
+********************************************************/
+main{
+    width: 90%;
+    height: 100vh;
+    background-color: LIGH;
+    content: "";
+    margin: 0 auto;
+    padding: 1.5%;
+}
+
+/****    MENU    ****/
+.main-menu li{
+    cursor: pointer;
+}
+
+/********************************************************     
+***********          MEDIA QUERRYS            ***********     
+********************************************************/
+@media screen and (max-width: 768px){
+    main{
+        background-color: violet;
+    }
+
+    /****    NAVEGADOR    ****/
+
+    nav{
+        width: 76%;
+        padding: 2%;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-desplegable{
+        display: none;
+    }
+
+    #menu-hamburguesa:checked ~ .nav-desplegable{
+        display: block;
+    }
+
+    nav label{
+        display: inline;
+        width: 30px;
+        height: 30px;
+    }
+
+    .nav-titulo{
+        display: inline;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .nav-boton{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    main{
+        background-color: brown;
+    }
+}
+
+/* Boton modo Oscuro */
+/* .switch > input{
+    display: none;
+}
+
+.switch > label{
+    display: block;
+    position: relative;
+    background: #d1dae3;
+    width: 112px;
+    height: 56px;
+    border-radius: 30px;
+    border: 2px solid #cad3dc; 
+    border: 4px solid black;
+    cursor: pointer;
+}
+
+.switch > label:before{
+    content: "";
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    left: 0;
+    top: 0;
+    transition: all 0.3s;
+}
+
+.switch > input:checked + label{
+    background: #20a0ff;
+}
+
+.switch > input:checked + label:before{
+    left: 56px;
+} */

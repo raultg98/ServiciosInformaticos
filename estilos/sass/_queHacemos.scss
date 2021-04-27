@@ -1,0 +1,161 @@
+@import "_variables";
+@import "_mixin";
+
+.queHacemos{
+    @include anchoResponsive(80%, 90%, 100%);
+    // background-color: blueviolet;
+    margin: 0 auto;
+    
+    .queHacemos-header{
+         width: 100%;
+
+        .queHacemos-header__titulo{
+            font-size: 3vh;
+            font-weight: bold;
+            padding-left: 1vw;
+            border-left: 0.5vw solid $fondoNavegador;
+        }
+
+        .queHacemos-header__descripcion{
+            width: 100%;
+        }
+    }
+
+    .queHacemos-body{
+        width: 100%;
+        // background-color: blue;
+
+        .queHacemos-body__icono{
+            font-size: 2vw;
+
+            .fa-js{
+                color: yellow;
+            }
+
+            .fa-angular{
+                color: red;
+            }
+
+            .fa-react{
+                color:lightblue;
+            }
+
+            .fa-vuejs{
+                color: green;
+            }
+
+            .fa-node-js{
+                color: green;
+            }
+
+            .fa-python{
+                color: darkblue;
+            }
+
+            .fa-php{
+                color: purple;
+            }
+
+            .fa-npm{
+                color: red;
+            }
+
+            .fa-gulp{
+                color: red;
+            }
+
+            .fa-grunt{
+                color: yellow;
+            }
+
+            .fa-html5{
+                color: orange;
+            }
+
+            .fa-css3-alt{
+                color: blue;
+            }
+
+            .fa-sass{
+                color: magenta;
+            }
+
+            .fa-less{
+                color: blue;
+            }
+        }
+
+        // .queHacemos-body__cajita{
+        //     display: block;
+        //     width: 23.5%;
+        //     // height: 300px;
+        //     float: left;
+        //     margin-bottom: 2%;
+
+        //     &:nth-child(1), &:nth-child(2), &:nth-child(3),
+        //     &:nth-child(5), &:nth-child(6), &:nth-child(7){
+        //         margin-right: 2%;
+        //     }
+
+        //     .queHacemos-body__icono{
+        //         font-size: 2vw;
+
+        //         .fa-js{
+        //             color: yellow;
+        //         }
+
+        //         .fa-angular{
+        //             color: red;
+        //         }
+
+        //         .fa-react{
+        //             color:lightblue;
+        //         }
+
+        //         .fa-vuejs{
+        //             color: green;
+        //         }
+
+        //         .fa-node-js{
+        //             color: green;
+        //         }
+
+        //         .fa-python{
+        //             color: darkblue;
+        //         }
+
+        //         .fa-php{
+        //             color: purple;
+        //         }
+
+        //         .fa-npm{
+        //             color: red;
+        //         }
+
+        //         .fa-gulp{
+        //             color: red;
+        //         }
+
+        //         .fa-grunt{
+        //             color: yellow;
+        //         }
+
+        //         .fa-html5{
+        //             color: orange;
+        //         }
+
+        //         .fa-css3-alt{
+        //             color: blue;
+        //         }
+
+        //         .fa-sass{
+        //             color: magenta;
+        //         }
+
+        //         .fa-less{
+        //             color: blue;
+        //         }
+        //     }
+        //}
+    }
+}

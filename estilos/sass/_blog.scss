@@ -1,0 +1,15 @@
+.blogContenedor{
+    @include anchoResponsive(80%, 90%, 100%);
+    background-color: red;
+    height: 100vh;
+
+    margin: 0 auto;
+
+    display: flex;
+    // flex-direction: column;
+    flex-wrap: wrap;
+
+    .blogContenedor-item{
+       
+    }
+}

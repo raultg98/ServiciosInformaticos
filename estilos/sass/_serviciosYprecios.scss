@@ -1,0 +1,32 @@
+@import "_variables";
+
+.serviciosYprecios{
+    @include anchoResponsive(80%, 90%, 100%);
+
+    // background-color: red;
+    margin: 0 auto;
+    // display: flex;
+
+    .serviciosYprecios-header{
+        margin: 0 auto;
+        //background-color: royalblue;
+    }
+
+    .paquetes{
+        .tabla{
+            border: 1px solid grey;
+            border-radius: 4px;
+            .columna{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid grey;
+
+                i{
+                    color: $success;
+                }
+            }
+            
+        }
+    }
+}

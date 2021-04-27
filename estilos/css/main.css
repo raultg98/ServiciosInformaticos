@@ -1,0 +1,656 @@
+/* NAVEGADOR DESPLEGABLE */
+/* SERVICIOS INFORMATICOS */
+/************   REVISAR   ************/
+body {
+  width: 100vw;
+  background-color: white;
+}
+body .contenedor {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  height: 100vh;
+}
+@media (max-width: 768px) {
+  body .contenedor {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  body .contenedor {
+    width: 100%;
+  }
+}
+body .contenedor .nav {
+  width: 25%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  body .contenedor .nav {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  body .contenedor .nav {
+    width: 100%;
+  }
+}
+body .contenedor .subContenedor {
+  width: 75%;
+  height: auto;
+  float: left;
+}
+@media (max-width: 768px) {
+  body .contenedor .subContenedor {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  body .contenedor .subContenedor {
+    width: 100%;
+  }
+}
+body .contenedor .subContenedor .subContenedor-boton {
+  color: white;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+body .footer {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  body .footer {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  body .footer {
+    width: 100%;
+  }
+}
+
+/* NAVEGADOR DESPLEGABLE */
+/* SERVICIOS INFORMATICOS */
+/************   REVISAR   ************/
+.proyectos-header {
+  width: 80%;
+  height: auto;
+  margin: 2vh auto;
+}
+@media (max-width: 768px) {
+  .proyectos-header {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .proyectos-header {
+    width: 100%;
+  }
+}
+.proyectos-header .proyectos-header__titulo {
+  text-align: center;
+  font-weight: bold;
+}
+.proyectos-header .proyectos-header__texto {
+  text-align: center;
+}
+.proyectos-header .proyecto-header__boton {
+  margin: 0 auto;
+}
+
+.proyectos {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .proyectos {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .proyectos {
+    width: 100%;
+  }
+}
+.proyectos .proyectos-header__index {
+  font-size: 3vh;
+  font-weight: bold;
+  padding-left: 1vw;
+  border-left: 0.5vw solid #00ffb4;
+}
+.proyectos .proyectos-menu {
+  width: 80%;
+  margin: 0 auto;
+}
+.proyectos .proyectos-menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.proyectos .proyectos-menu li {
+  margin: 2%;
+  padding: 1%;
+  cursor: pointer;
+}
+.proyectos .proyectos-menu li:hover {
+  font-weight: bold;
+}
+.proyectos .proyecto {
+  width: 49%;
+  background-color: yellowgreen;
+  position: relative;
+  float: left;
+  margin-bottom: 2%;
+  display: flex;
+}
+@media (max-width: 768px) {
+  .proyectos .proyecto {
+    display: block;
+    width: 100%;
+    margin: 1% auto;
+  }
+}
+@media (max-width: 500px) {
+  .proyectos .proyecto {
+    display: block;
+    width: 100%;
+    margin: 1% auto;
+  }
+}
+.proyectos .proyecto:nth-child(even) {
+  margin-right: 2%;
+}
+.proyectos .proyecto:hover .proyecto-efecto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.proyectos .proyecto .proyecto-efecto {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  display: none;
+}
+.proyectos .proyecto .proyecto-efecto .proyecto-efecto__boton {
+  background-color: grey;
+  padding: 2%;
+  border: 1px transparent;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+.proyectos .proyecto .proyecto-imagen {
+  width: 30%;
+  float: left;
+}
+.proyectos .proyecto .proyecto-imagen .proyecto-imagen__item {
+  width: 100%;
+  height: 100%;
+}
+.proyectos .proyecto .proyecto-texto {
+  width: 66%;
+  float: left;
+  margin: 2%;
+  text-align: justify;
+}
+.proyectos .proyecto .proyecto-texto .proyecto-texto__titulo {
+  text-align: center;
+  padding: 1px;
+  display: flex;
+  justify-content: center;
+}
+.nav {
+  float: left;
+  background-color: #00ffb4;
+  color: white;
+  /****     HAMBURGUESA     ****/
+  /****     CABECERA NAVEGADOR     ****/
+  /****     ICONOS     ****/
+  /****     MENU     ****/
+  /****     BOTON NAVEGADOR     ****/
+  /****     LETRAS MODO OSCURO     ****/
+  /****     BOTON MODO OSCURO     ****/
+}
+.nav #menu-hamburguesa {
+  display: none;
+}
+.nav label {
+  display: none;
+}
+@media (max-width: 768px) {
+  .nav label {
+    display: inline;
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    margin: 4%;
+  }
+  .nav .nav-titulo {
+    margin: -4% auto 0;
+  }
+  .nav #menu-hamburguesa:checked ~ .nav-desplegable {
+    display: block;
+  }
+  .nav .nav-desplegable {
+    display: none;
+  }
+}
+.nav .nav-titulo {
+  display: inline;
+  width: 80%;
+  color: white;
+  text-align: center;
+  margin: 2% auto;
+  font-size: 2rem;
+}
+.nav .nav-logo {
+  width: 40%;
+  border: 1px solid white;
+  border-radius: 40%;
+}
+.nav .nav-descripcion {
+  width: 80%;
+  font-size: 13px;
+  margin: 5px auto 10px;
+  text-align: center;
+  font-size: 1vw;
+}
+.nav .nav-iconos {
+  width: 90%;
+  margin: 0 auto;
+}
+.nav .nav-iconos ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.nav .nav-iconos ul li {
+  position: relative;
+  float: left;
+}
+.nav .nav-iconos ul li span :hover {
+  border-color: #085A4D;
+  background-color: #085A4D;
+  color: white;
+}
+.nav .nav-iconos ul a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  border: 4px solid white;
+  background-color: white;
+  border-radius: 50%;
+}
+.nav .nav-iconos ul a:hover {
+  border-color: #085A4D;
+  background-color: #085A4D;
+  color: white;
+}
+.nav .nav-iconos li {
+  display: inline-block;
+  margin: 2%;
+}
+.nav .nav-iconos span {
+  color: #00ffb4;
+}
+.nav .menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav .menu ul a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-left: 12%;
+  margin-top: 3%;
+}
+.nav .menu ul a:hover {
+  color: #085A4D;
+}
+.nav .menu ul li:hover > ul {
+  display: block;
+  background-color: #18EBCA;
+  width: 80%;
+  margin: 0 auto;
+}
+.nav .menu ul ul {
+  display: none;
+  margin-left: 12px;
+}
+.nav .nav-boton {
+  margin: 2vh auto;
+  color: white;
+  background-color: #085A4D;
+}
+.nav .letras-modoOscuro {
+  display: block;
+  text-align: center;
+  color: white;
+}
+.nav .switch {
+  display: flex;
+  justify-content: center;
+  margin-top: -10px;
+  padding-bottom: 2vh;
+}
+.nav .switch input {
+  display: none;
+}
+.nav .switch input:checked + label {
+  background: grey;
+  border-color: #00ffb4;
+}
+.nav .switch input:checked + label:before {
+  background: #00ffb4;
+  left: 50%;
+}
+.nav .switch label {
+  display: block;
+  position: relative;
+  background: #00ffb4;
+  width: 18%;
+  height: 2vh;
+  border-radius: 30px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+.nav .switch label:before {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 1.7vh;
+  background-color: white;
+  border-radius: 40%;
+  left: 0;
+  top: 0;
+  transition: all 0.3s;
+  margin-left: 4%;
+  margin-top: 2%;
+}
+.nav hr {
+  display: block;
+  width: 80%;
+  border: 0.3px solid #085A4D;
+  margin: 10% auto;
+}
+
+/* NAVEGADOR DESPLEGABLE */
+/* SERVICIOS INFORMATICOS */
+/************   REVISAR   ************/
+.serviciosInformaticos {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+}
+@media (max-width: 768px) {
+  .serviciosInformaticos {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .serviciosInformaticos {
+    width: 100%;
+  }
+}
+.serviciosInformaticos .serviciosInformaticos-foto {
+  width: 40%;
+  height: 100%;
+  float: left;
+}
+.serviciosInformaticos .serviciosInformaticos-foto img {
+  width: 100%;
+  height: 100%;
+}
+
+/* NAVEGADOR DESPLEGABLE */
+/* SERVICIOS INFORMATICOS */
+/************   REVISAR   ************/
+.queHacemos {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .queHacemos {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .queHacemos {
+    width: 100%;
+  }
+}
+.queHacemos .queHacemos-header {
+  width: 100%;
+}
+.queHacemos .queHacemos-header .queHacemos-header__titulo {
+  font-size: 3vh;
+  font-weight: bold;
+  padding-left: 1vw;
+  border-left: 0.5vw solid #00ffb4;
+}
+.queHacemos .queHacemos-header .queHacemos-header__descripcion {
+  width: 100%;
+}
+.queHacemos .queHacemos-body {
+  width: 100%;
+}
+.queHacemos .queHacemos-body .queHacemos-body__icono {
+  font-size: 2vw;
+}
+.queHacemos .queHacemos-body .queHacemos-body__icono .fa-js {
+  color: yellow;
+}
+.queHacemos .queHacemos-body .queHacemos-body__icono .fa-angular {
+  color: red;
+}
+.queHacemos .queHacemos-body .queHacemos-body__icono .fa-react {
+  color: lightblue;
+}
+.queHacemos .queHacemos-body .queHacemos-body__icono .fa-vuejs {
+  color: green;
+}
+.queHacemos .queHacemos-body .queHacemos-body__icono .fa-node-js {
+  color: green;
+}
+.queHacemos .queHacemos-body .queHacemos-body__icono .fa-python {
+  color: darkblue;
+}
+.queHacemos .queHacemos-body .queHacemos-body__icono .fa-php {
+  color: purple;
+}
+.queHacemos .queHacemos-body .queHacemos-body__icono .fa-npm {
+  color: red;
+}
+.queHacemos .queHacemos-body .queHacemos-body__icono .fa-gulp {
+  color: red;
+}
+.queHacemos .queHacemos-body .queHacemos-body__icono .fa-grunt {
+  color: yellow;
+}
+.queHacemos .queHacemos-body .queHacemos-body__icono .fa-html5 {
+  color: orange;
+}
+.queHacemos .queHacemos-body .queHacemos-body__icono .fa-css3-alt {
+  color: blue;
+}
+.queHacemos .queHacemos-body .queHacemos-body__icono .fa-sass {
+  color: magenta;
+}
+.queHacemos .queHacemos-body .queHacemos-body__icono .fa-less {
+  color: blue;
+}
+
+/* NAVEGADOR DESPLEGABLE */
+/* SERVICIOS INFORMATICOS */
+/************   REVISAR   ************/
+.nuestrosClientes {
+  width: 80%;
+  height: auto;
+  background-color: lightblue;
+  margin: 0 auto;
+  display: flex;
+}
+@media (max-width: 768px) {
+  .nuestrosClientes {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .nuestrosClientes {
+    width: 100%;
+  }
+}
+.nuestrosClientes .nuestrosClientes-titulo {
+  font-size: 3vh;
+  font-weight: bold;
+  padding-left: 1vw;
+  border-left: 0.5vw solid #00ffb4;
+}
+.nuestrosClientes .logo-carousel {
+  width: 80px;
+  height: 80px;
+}
+
+/* NAVEGADOR DESPLEGABLE */
+/* SERVICIOS INFORMATICOS */
+/************   REVISAR   ************/
+.nuestroBlog {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  height: 200px;
+}
+@media (max-width: 768px) {
+  .nuestroBlog {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .nuestroBlog {
+    width: 100%;
+  }
+}
+.nuestroBlog .nuestroBlog-header {
+  font-size: 3vh;
+  font-weight: bold;
+  padding-left: 1vw;
+  border-left: 0.5vw solid #00ffb4;
+}
+.nuestroBlog .nuestroBlog-logo {
+  width: 100%;
+  height: 200px;
+}
+
+.serviciosYprecios {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .serviciosYprecios {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .serviciosYprecios {
+    width: 100%;
+  }
+}
+.serviciosYprecios .serviciosYprecios-header {
+  margin: 0 auto;
+}
+.serviciosYprecios .paquetes .tabla {
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+.serviciosYprecios .paquetes .tabla .columna {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+}
+.serviciosYprecios .paquetes .tabla .columna i {
+  color: #198754;
+}
+
+.presentacionCoorp {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .presentacionCoorp {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .presentacionCoorp {
+    width: 100%;
+  }
+}
+.presentacionCoorp .presentacionCoorp-cajita {
+  margin-top: 3vh;
+  border: 1px solid grey;
+  border-radius: 3%;
+  padding: 3%;
+}
+.presentacionCoorp .presentacionCoorp-cajita .presentacionCoorp-cajita__texto {
+  text-align: justify;
+}
+
+.blogContenedor {
+  width: 80%;
+  height: auto;
+  background-color: red;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .blogContenedor {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .blogContenedor {
+    width: 100%;
+  }
+}
+.proyectoIndividual {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .proyectoIndividual {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .proyectoIndividual {
+    width: 100%;
+  }
+}
+.proyectoIndividual img {
+  width: 100%;
+  height: 200px;
+}
+.proyectoIndividual p {
+  text-align: justify;
+}
+
+/*# sourceMappingURL=main.css.map */

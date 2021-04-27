@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../estilos/fuente/fonts.css">
+    <link rel="stylesheet" href="../estilos/css/normalize.css">
+    <link rel="stylesheet" href="../estilos/css/main.css">
+    <title>Proyectos</title>
+</head>
+<body>
+
+    <!-- Preguntar a pablo, sobre si tengo que utilizar el mismo man.scss o tengo
+        que utilizar otro importando las _pagina.scss a otro archivo scss y compilar ese-->
+    <div class="contenedor">
+        <div class="subContenedor">
+            <main>
+                <header class="proyectos-header">
+                    <h1 class="proyectos-header__titulo">Nuestros Proyectos</h1>
+                    <p class="proyectos-header__texto">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla eget tellus 
+                        consectetur interdum. Etiam ullamcorper accumsan urna, eu pharetra quam auctor eget.
+                    </p>
+
+                    <div class="text-center my-4">
+                        <a href="contacto.html" class="btn btn-success">
+                            <span class="icon-compass mx-2"></span>  Contacto
+                        </a>
+                    </div>
+                </header>
+
+                <!------------     NUESTROS PROYECTOS     ------------>
+                <div class="proyectos">
+
+                    <!-- MENU DE LOS PROYECTOS -->
+                    <div class="proyectos-menu">
+                        <ul>
+                            <li class="proyectos-menu__item prueba h4" id="proyecto-menu__todos">Todos</li>
+                            <li class="proyectos-menu__item h4 text-center" id="proyecto-menu__app">Aplicaciones Móviles</li>
+                            <li class="proyectos-menu__item h4" id="proyecto-menu__fronted">Fronted</li>
+                            <li class="proyectos-menu__item h4" id="proyecto-menu__backed">Backed</li>
+                        </ul>
+                    </div>
+
+                    <!-- PROYECTO 1 -->
+                    <div class="proyecto proyecto-app">
+                        <div class="proyecto-efecto">
+                            <a href="proyectos/proyecto1.html" class="proyecto-efecto__boton" style="text-decoration: none;">
+                                <span class="icon-eye"> Ver más detalles</span>
+                            </a>
+                        </div>
+
+                        <div class="proyecto-imagen">
+                            <img src="../img/proyecto1.jpg" alt="" class="proyecto-imagen__item">
+                        </div>
+
+                        <div class="proyecto-texto">
+                            <h3 class="proyecto-texto__titulo">
+                                Proyecto 1
+                            </h3>
+                            <p class="proyecto-texto__item">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse a magna rutrum, tempor libero sit amet, congue
+                                arcu. Ut pharetra dapibus nisl dignissim pretium.
+                            </p>
+                        </div>
+                    </div>
+
+                     <!-- PROYECTO 2 -->
+                     <div class="proyecto proyecto-fronted" id="proyecto">
+                        <div class="proyecto-efecto">
+                            <button class="proyecto-efecto__boton">
+                                <span class="icon-eye"> Ver más detalles</span>
+                            </button>
+                        </div>
+
+                        <div class="proyecto-imagen">
+                            <img src="../img/proyecto1.jpg" alt="" class="proyecto-imagen__item">
+                        </div>
+
+                        <div class="proyecto-texto">
+                            <h3 class="proyecto-texto__titulo">
+                                Proyecto 2
+                            </h3>
+                            <p class="proyecto-texto__item">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse a magna rutrum, tempor libero sit amet, congue
+                                arcu. Ut pharetra dapibus nisl dignissim pretium.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- PROYECTO 3 -->
+                    <div class="proyecto proyecto-backed">
+                        <div class="proyecto-efecto">
+                            <button class="proyecto-efecto__boton">
+                                <span class="icon-eye"> Ver más detalles</span>
+                            </button>
+                        </div>
+
+                        <div class="proyecto-imagen">
+                            <img src="../img/proyecto1.jpg" alt="" class="proyecto-imagen__item">
+                        </div>
+
+                        <div class="proyecto-texto">
+                            <h3 class="proyecto-texto__titulo">
+                                Proyecto 3
+                            </h3>
+                            <p class="proyecto-texto__item">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse a magna rutrum, tempor libero sit amet, congue
+                                arcu. Ut pharetra dapibus nisl dignissim pretium.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- PROYECTO 4 -->
+                    <div class="proyecto proyecto-app">
+                        <div class="proyecto-efecto">
+                            <button class="proyecto-efecto__boton">
+                                <span class="icon-eye"> Ver más detalles</span>
+                            </button>
+                        </div>
+
+                        <div class="proyecto-imagen">
+                            <img src="../img/proyecto1.jpg" alt="" class="proyecto-imagen__item">
+                        </div>
+
+                        <div class="proyecto-texto">
+                            <h3 class="proyecto-texto__titulo">
+                                Proyecto 4
+                            </h3>
+                            <p class="proyecto-texto__item">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse a magna rutrum, tempor libero sit amet, congue
+                                arcu. Ut pharetra dapibus nisl dignissim pretium.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- PROYECTO 5 -->
+                    <div class="proyecto proyecto-fronted">
+                        <div class="proyecto-efecto">
+                            <button class="proyecto-efecto__boton">
+                                <span class="icon-eye"> Ver más detalles</span>
+                            </button>
+                        </div>
+
+                        <div class="proyecto-imagen">
+                            <img src="../img/proyecto1.jpg" alt="" class="proyecto-imagen__item">
+                        </div>
+
+                        <div class="proyecto-texto">
+                            <h3 class="proyecto-texto__titulo">
+                                Proyecto 5
+                            </h3>
+                            <p class="proyecto-texto__item">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse a magna rutrum, tempor libero sit amet, congue
+                                arcu. Ut pharetra dapibus nisl dignissim pretium.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- PROYECTO 6 -->
+                    <div class="proyecto proyecto-backed">
+                        <div class="proyecto-efecto">
+                            <button class="proyecto-efecto__boton">
+                                <span class="icon-eye"> Ver más detalles</span>
+                            </button>
+                        </div>
+
+                        <div class="proyecto-imagen">
+                            <img src="../img/proyecto1.jpg" alt="" class="proyecto-imagen__item">
+                        </div>
+
+                        <div class="proyecto-texto">
+                            <h3 class="proyecto-texto__titulo">
+                                Proyecto 6
+                            </h3>
+                            <p class="proyecto-texto__item">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse a magna rutrum, tempor libero sit amet, congue
+                                arcu. Ut pharetra dapibus nisl dignissim pretium.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- PROYECTO 7 -->
+                    <div class="proyecto proyecto-app">
+                        <div class="proyecto-efecto">
+                            <button class="proyecto-efecto__boton">
+                                <span class="icon-eye"> Ver más detalles</span>
+                            </button>
+                        </div>
+
+                        <div class="proyecto-imagen">
+                            <img src="../img/proyecto1.jpg" alt="" class="proyecto-imagen__item">
+                        </div>
+
+                        <div class="proyecto-texto">
+                            <h3 class="proyecto-texto__titulo">
+                                Proyecto 7
+                            </h3>
+                            <p class="proyecto-texto__item">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse a magna rutrum, tempor libero sit amet, congue
+                                arcu. Ut pharetra dapibus nisl dignissim pretium.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- PROYECTO 8 -->
+                    <div class="proyecto proyecto-fronted">
+                        <div class="proyecto-efecto">
+                            <button class="proyecto-efecto__boton">
+                                <span class="icon-eye"> Ver más detalles</span>
+                            </button>
+                        </div>
+
+                        <div class="proyecto-imagen">
+                            <img src="../img/proyecto1.jpg" alt="" class="proyecto-imagen__item">
+                        </div>
+
+                        <div class="proyecto-texto">
+                            <h3 class="proyecto-texto__titulo">
+                                Proyecto 8
+                            </h3>
+                            <p class="proyecto-texto__item">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse a magna rutrum, tempor libero sit amet, congue
+                                arcu. Ut pharetra dapibus nisl dignissim pretium.
+                            </p>
+                        </div>
+                    </div>   
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="../scripts/navegador.js"></script>
+    <script src="../scripts/proyecto.js"></script>
+    <script src="../scripts/footer.js"></script>
+</body>
+</html>

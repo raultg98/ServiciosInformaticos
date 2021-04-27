@@ -1,0 +1,22 @@
+@import "_variables";
+@import "_mixin";
+
+.nuestrosClientes{
+    @include anchoResponsive(80%, 90%, 100%);
+
+    background-color: lightblue;
+    margin: 0 auto;
+    display: flex;
+
+    .nuestrosClientes-titulo{
+        font-size: 3vh;
+        font-weight: bold;
+        padding-left: 1vw;
+        border-left: 0.5vw solid $fondoNavegador;
+    }
+
+    .logo-carousel{
+        width: 80px;
+        height: 80px;
+    }
+}

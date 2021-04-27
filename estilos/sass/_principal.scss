@@ -1,0 +1,39 @@
+@import "_variables";
+@import "_mixin";
+
+body{
+    width: 100vw;
+    background-color: white;
+    
+    .contenedor{
+        @include anchoResponsive(90%, 90%, 100%);
+        margin: 0 auto;
+        height: 100vh;
+
+        .nav{
+            @include anchoResponsive(25%, 90%, 100%);
+            // background-color: blueviolet;
+        }
+
+        .subContenedor{
+            @include anchoResponsive(75%, 90%, 100%);
+            float: left;
+            // background-color: salmon;
+
+            .subContenedor-boton{
+                color: $letrasPrincipal;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    .footer{
+        @include anchoResponsive(90%, 90%, 100%);
+        
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }  
+}

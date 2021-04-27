@@ -1,0 +1,18 @@
+.presentacionCoorp{
+    @include anchoResponsive(80%, 90%, 100%);
+
+    // background-color: red;
+    margin: 0 auto;
+    // display: flex;
+    
+    .presentacionCoorp-cajita{
+        margin-top: 3vh;
+        border: 1px solid grey;
+        border-radius: 3%;
+        padding: 3%;
+        
+        .presentacionCoorp-cajita__texto{
+            text-align: justify;            
+        }
+    }
+}

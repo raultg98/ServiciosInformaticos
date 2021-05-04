@@ -1,0 +1,48 @@
+<%- include('template/cabecera.ejs', {titulo: 'Iconos Ingen1um'}) %>
+
+
+<!-- <div class="my-4 mx-4 div-icono">
+    <img src="/img/icons.png" alt="No se puede mostrar"
+         style="margin: 0 0 -9900px 0;">
+</div> -->
+
+<% for(let i=0; i<datos.length; i++){ %>
+    
+    <div class="d-flex container align-items-center justify-content-between 
+                border border-success rounded my-3">
+
+        <div class="d-flex align-items-center">
+            <h6><%= datos[i].nombre %></h6>
+            
+            <div class="my-4 mx-4 div-icono">
+                <img src="/img/icons.png" alt="No se puede mostrar" 
+                     id="<%= datos[i].icono %>" class="imagen"
+                     data-refIcon="<%= datos[i].icono %>">
+            </div>
+        </div>
+        
+        <!-- FLECHITA -->
+
+        <i class="fas fa-arrow-right text-success"></i>
+
+        
+        <!-- ICONO A CAMBIAR -->
+        <div class="">
+
+        </div>
+
+        <!-- BOTON CAMBIAR ICONO--  -->
+        <button type="button" class="btn btn-outline-primary">
+            Cambiar Icono
+        </button>
+    </div>
+    
+<% } %> 
+
+
+<!-- style="margin: -100px 0 -9800px 0;" -->
+
+
+
+<%- include('template/footer.ejs') %> 
+ 
